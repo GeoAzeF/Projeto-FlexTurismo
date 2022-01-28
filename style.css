@@ -1,0 +1,301 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: right;
+}
+
+menu ul li{
+    border-radius: 3px;
+    padding: 2px;
+    margin-left: 15px;
+}
+
+menu ul li:hover{
+    background-color: white;
+}
+
+menu ul li a:hover{
+    color: #122A57;
+    font-weight: bold;
+}
+
+menu ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+div img{
+    display: block;
+    width: 100%;
+}
+
+.flex-container{
+    display: flex;
+    max-width: 992px;
+    width: 100%;
+    margin: auto;
+}
+
+header{
+    background-color: #122A57;
+    color: white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.apresentacao{
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao .texto-apresentacao{
+    min-height: 200px;
+}
+
+.texto-apresentacao h1{
+    color: #122A57;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.saiba-mais{
+    display: block;
+    background-color: #122A57;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 30px;
+    margin: 10px 0 10px 0;
+}
+
+#quem-somos{
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#quem-somos img{
+    min-width: 420px;
+}
+
+#quem-somos h2{
+    font-size: 32px;
+    color: #122A57;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#quem-somos p{
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+#quem-somos h2::before{
+    content: "";
+    height: 36px;
+    width: 5px;
+    margin-right: 5px;
+    background-color: #122A57;
+    position: relative;
+}
+
+.container-externo{
+    background-color: #122A57;
+    width: 100%;
+}
+
+#servicos{
+    flex-direction: column;
+    padding: 25px 0 50px 0;
+}
+
+#servicos h2{
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.lista-servicos{
+    display: flex;
+    justify-content: space-between;
+    margin: 2px;
+    padding: 5px;
+}
+
+.item-servico{
+    text-align: center;
+}
+
+.item-servico p{
+    margin: 10px 0 25px 0;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.item-servico a{
+    width: 120px;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: white;
+    color: #122A57;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.item-servico img{
+    width: 80%;
+    margin: auto;
+}
+
+#planos{
+    flex-direction: column;
+    min-height: 75vh;
+}
+
+#planos h2{
+    font-size: 32px;
+    color: #122A57;
+    margin-top: 30px;
+}
+
+.lista-planos{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.item-plano{
+    flex: 1;
+    border: 5px solid #122A57;
+    padding: 10px 25px 25px 25px;
+    margin-right: 15px;
+    max-width: 240px;
+}
+
+.item-plano h3{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.item-plano h3::after{
+    content: "";
+    background: #122A57;
+    width: 100%;
+    height: 3px;
+    margin-top: 5px;
+}
+/*
+.item-plano ul li::before{
+        content: "▪";
+        color: #122A57;
+        font-size: 150%;
+        padding-right: 10px;
+}
+*/
+
+.item-plano ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.item-plano ul li::before{
+    content: "";
+    width: 7px;
+    height: 7px;
+    background-color: #122A57;
+    margin-right: 5px;
+}
+
+.saiba-mais-planos{
+    display: block;
+    background-color: #122A57;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+footer{
+    color: white;
+    background-color: #122A57;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p{
+    padding: 10px;
+}
+
+
+/* Mobile */
+
+@media(max-width: 992px){
+    .flex-container{
+        flex-direction: column;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao .texto-apresentacao{
+        max-width: 100%;
+    }
+
+    #quem-somos{
+        flex-direction: column-reverse;
+    }
+
+    #quem-somos img{
+        min-width: 320px;
+        margin: auto;
+    }
+
+    .lista-servicos{
+        flex-direction: column;
+    }
+
+    .item-servico img{
+        width: 50%;
+        margin: auto;
+    }
+
+    .lista-planos{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .lista-planos .item-plano{
+        max-width: 90%;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
